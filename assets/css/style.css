@@ -15,9 +15,6 @@ header {
 	margin-bottom: 10px;
 }
 
-/*.clearFix [
-	clear:both;
-]*/
 
 .links {
 	overflow: auto;
@@ -193,6 +190,93 @@ input[type=submit] {
 	padding-right: 20px;
 }
 
+
+/* Tablet Screen Size Begin */
+
+@media screen and (max-width: 768px) {  
+
+.links {
+	width: 100%;
+	float: left;
+}
+
+.headerbox {
+	position: static;
+    width: 100%;
+    height: 40%;
+    font-size: 12px;
+	font-weight: 700;
+	padding-top: 3px;
+	margin-left: 0px;
+
+  }
+
+.lineup {
+	width: 33%;
+	padding-top: 5px;
+	margin-left: 0px;
+}
+
+.aboutMe{
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px;
+	margin-top: 120px;
+	margin-bottom: 10px;
+}
+
+.textwrap{
+	clear: both;
+	padding: 0px 0px 0px 0px;
+	padding-right: 40%;
+	padding-left: 40%;
+}
+
+aside {
+	background-color: white;
+	width: 100%;
+	height: 175px;
+	float: left;
+	margin-top: 20px;
+		margin-left: 0px;
+		
+}
+
+.container {
+	overflow: auto;
+	background-color: white;
+	height: 100px;
+	margin-bottom: 70px;
+}
+
+.icons {
+	margin-left: 20px;
+	height: 55px;
+	width: 55px;
+	float: left;
+}
+
+hr {
+	background-color: white;
+}
+
+.footerbox {
+	height: 3px;
+	width: 100%;
+	bottom: 50px;
+	margin-top: 25px;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	font-size: 12px;
+}
+
+}
+
+/* Tablet Screen Size End */
+
 @media handheld, screen and (max-width: 640px) {
 
   /* xs Page Begin */
@@ -225,13 +309,15 @@ input[type=submit] {
 	margin-left: 0px;
 	margin-top: 120px;
 	margin-bottom: 10px;
+	overflow: none;
 }
 
 .textwrap{
 	clear: both;
 	padding: 0px 0px 0px 0px;
-	padding-right: 37%;
-	padding-left: 37%;
+	padding-right: 40%;
+	padding-left: 40%;
+	overflow: none;
 }
 
 aside {
@@ -280,58 +366,3 @@ footer {
 
 
 
-/* Tablet Screen Size Begin */
-
-@media only screen and (min-width: 641px) and (max-width: 768px) {
-  
-  .home_races_container {
-    width: 70%;
-    position: relative;
-    top: 5em;
-    min-width: 600px;
-  }
-
-  .home_race_image {
-    margin: 1em 0em 0 1em;
-    width: 130px;
-    height: 130px;
-  }
-
-  .left-container > div {
-    position: relative;
-    top: 11em;
-  }
-
-}
-
-/* Tablet Screen Size End */
-
-/* Desktop Screen Size Begin */
-
-@media handheld, screen and (max-width: 980px) {
-
-  ul.topnav li:not(:first-child) {display: none;}
-
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-
-  ul.topnav.responsive {position: relative;}
-
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-
-}
